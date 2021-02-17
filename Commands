@@ -181,11 +181,9 @@ smtp-user-enum -M VRFY -D acme.local -U /root/Desktop/oscp-users -t 10.11.1.X
 smtp-user-enum -M VRFY -U /root/seclists/oscp-users.txt -t 10.X.X.X
 
 ismtp -h 10.X.X.X:25 -e /root/seclists/oscp-users.txt
-
-Automation:
-
-SPARTA
-Reconnoitre
-Faraday
-
+================================== Additional Command from personal notes ==========================
+Cracking Wifi pass using 4whs:
+crunch 17 17 -t letmein@ditt@%%%% -l aaaaaaa@aaaaaaaaa | aircrack-ng -b F0:B4:D2:D6:FB:45 -w- bettercap-wifi-handshakes.pcap -V
+Swapping netcat shell to interactive pty shell:
+$python3 -c 'import pty;pty.spawn("/bin/bash")'
 
